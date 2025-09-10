@@ -3,768 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Educational UX/UI Website</title>
+    <title>Stellar UX/UI Designs</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
   </head>
   <body>
-    <!-- HOME PAGE -->
-    <div id="home" class="page home-page active">
-      <div>
-        <h1 class="home-title">Welcome to Our Amazing Website!</h1>
-
-        <!-- Navigation -->
-        <div class="navigation">
-          <nav class="nav-buttons">
-            <button class="nav-btn nav-home active" onclick="showPage('home')">
-              Home
-            </button>
-            <button class="nav-btn nav-about" onclick="showPage('about')">
-              About
-            </button>
-            <button class="nav-btn nav-services" onclick="showPage('services')">
-              Services
-            </button>
-            <button class="nav-btn nav-gallery" onclick="showPage('gallery')">
-              Gallery
-            </button>
-            <button class="nav-btn nav-updates" onclick="showPage('updates')">
-              Updates
-            </button>
-            <button class="nav-btn nav-contact" onclick="showPage('contact')">
-              Contact Us
-            </button>
-          </nav>
-        </div>
-
-        <!-- Main content -->
-        <div class="home-content">
-          <p class="home-text1">
-            This is our incredible home page where you can find everything you
-            need!
-          </p>
-
-          <p class="home-text2">
-            We offer the best services in the world and our team is absolutely
-            fantastic at what they do. You won't find better quality anywhere
-            else on the internet or in person.
-          </p>
-
-          <!-- Useless button -->
-          <button class="home-button" onclick="handleUselessButton()">
-            Click Here for Surprises!
-          </button>
-
-          <!-- Floating element -->
-          <div class="floating-star">⭐</div>
-
-          <div class="home-section2">
-            <h2 class="home-subtitle">Why Choose Us?</h2>
-
-            <ul class="home-list">
-              <li>✓ We are the best</li>
-              <li>✓ Quality guaranteed</li>
-              <li>✓ Fast service</li>
-              <li>✓ Affordable prices</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="background-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
     </div>
 
-    <!-- ABOUT PAGE -->
-    <div id="about" class="page about-page">
-      <h1 class="about-title">About Our Company</h1>
-
-      <div class="navigation">
-        <nav class="nav-buttons">
-          <button class="nav-btn nav-home" onclick="showPage('home')">
-            Home
-          </button>
-          <button class="nav-btn nav-about active" onclick="showPage('about')">
-            About
-          </button>
-          <button class="nav-btn nav-services" onclick="showPage('services')">
-            Services
-          </button>
-          <button class="nav-btn nav-gallery" onclick="showPage('gallery')">
-            Gallery
-          </button>
-          <button class="nav-btn nav-updates" onclick="showPage('updates')">
-            Updates
-          </button>
-          <button class="nav-btn nav-contact" onclick="showPage('contact')">
-            Contact Us
-          </button>
-        </nav>
+    <header class="main-header">
+      <div class="logo">
+        <a href="#home">Stellar ✨</a>
       </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <div class="about-content">
-        <h2 class="about-story">Our Story</h2>
-
-        <p class="about-text1">
-          We started this company in 2020 with a simple vision: to provide the
-          best services possible to our customers.
-        </p>
-
-        <p class="about-text2">
-          Our team consists of highly qualified professionals who are passionate
-          about what they do. We believe in innovation, quality, and customer
-          satisfaction above all else. Every project we undertake is approached
-          with dedication and attention to detail.
-        </p>
-
-        <h3 class="about-mission">Our Mission</h3>
-
-        <p class="about-text3">
-          To deliver exceptional results while maintaining the highest standards
-          of professionalism and integrity.
-        </p>
-
-        <!-- Misplaced image -->
-        <div class="about-image">
-          <img
-            src="https://images.unsplash.com/photo-1692133226337-55e513450a32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHx8fDE3NTcwMDk3MDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Our team"
-            class="about-img"
-          />
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <h1 class="main-title">Crafting Digital Experiences</h1>
+          <p class="subtitle">That Inspire, Engage, and Convert</p>
+          <a href="#services" class="cta-button cta-hero">Explore Our Work</a>
         </div>
+      </section>
 
-        <h2 class="about-team">Team</h2>
-
-        <p class="about-text4">
-          Our diverse team brings together expertise from various fields to
-          create innovative solutions for our clients.
-        </p>
-      </div>
-    </div>
-
-    <!-- SERVICES PAGE -->
-    <div id="services" class="page services-page">
-      <h1 class="services-title">Our Services</h1>
-
-      <div class="navigation">
-        <nav class="nav-buttons">
-          <button class="nav-btn nav-home" onclick="showPage('home')">
-            Home
-          </button>
-          <button class="nav-btn nav-about" onclick="showPage('about')">
-            About
-          </button>
-          <button
-            class="nav-btn nav-services active"
-            onclick="showPage('services')"
-          >
-            Services
-          </button>
-          <button class="nav-btn nav-gallery" onclick="showPage('gallery')">
-            Gallery
-          </button>
-          <button class="nav-btn nav-updates" onclick="showPage('updates')">
-            Updates
-          </button>
-          <button class="nav-btn nav-contact" onclick="showPage('contact')">
-            Contact Us
-          </button>
-        </nav>
-      </div>
-
-      <div class="services-content">
-        <div class="services-list">
-          <div class="service-item">
-            <div class="service-icon">⭐</div>
-            <div>
-              <h3
-                class="service-title"
-                style="color: #1d4ed8; font-family: Arial"
-              >
-                Web Development
-              </h3>
-              <h4 class="service-subtitle">
-                "We Make Websites That Sometimes Work!"
-              </h4>
-              <p class="service-desc">
-                We create amazing websites that work perfectly on all devices.
-              </p>
-            </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-icon">💖</div>
-            <div style="margin-left: 16px">
-              <h3
-                class="service-title"
-                style="color: #15803d; font-family: Georgia; font-size: 18px"
-              >
-                Mobile App Development
-              </h3>
-              <h4
-                class="service-subtitle"
-                style="color: #ea580c; font-size: 11px"
-              >
-                "Apps That Crash in Style!"
-              </h4>
-              <p
-                class="service-desc"
-                style="color: #374151; font-family: Helvetica; font-size: 17px"
-              >
-                Custom mobile applications for iOS and Android platforms.
-              </p>
-            </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-icon" style="margin-top: 12px">⚡</div>
-            <div style="margin-left: 12px">
-              <h3
-                class="service-title"
-                style="color: #b91c1c; font-family: Impact; font-size: 26px"
-              >
-                Digital Marketing
-              </h3>
-              <h4
-                class="service-subtitle"
-                style="color: #7c3aed; font-size: 13px"
-              >
-                "We'll Make You Famous... Somewhere!"
-              </h4>
-              <p
-                class="service-desc"
-                style="
-                  font-family: 'Comic Sans MS';
-                  font-size: 14px;
-                  color: #1f2937;
-                "
-              >
-                Boost your online presence with our marketing strategies.
-              </p>
-            </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-icon" style="margin-left: 16px">🛡️</div>
-            <div style="margin-left: 4px">
-              <h3
-                class="service-title"
-                style="
-                  color: #7c3aed;
-                  font-family: 'Courier New';
-                  font-size: 20px;
-                "
-              >
-                Cybersecurity
-              </h3>
-              <h4
-                class="service-subtitle"
-                style="color: #16a34a; font-size: 10px"
-              >
-                "Keeping Hackers Entertained Since 2020!"
-              </h4>
-              <p
-                class="service-desc"
-                style="color: #6b7280; font-family: Verdana; font-size: 16px"
-              >
-                Protect your business with our security solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Buttons too close together -->
-        <div class="services-buttons">
-          <button class="service-btn" onclick="handleWrongRedirect()">
-            Learn More About Services
-          </button>
-          <button class="service-btn" onclick="showPage('contact')">
-            Get Quote
-          </button>
-          <button class="service-btn" onclick="handleWrongRedirect()">
-            View Portfolio
-          </button>
-        </div>
-
-        <div class="services-why">
-          <h2 class="services-why-title">Why Our Services Are Different</h2>
-          <p class="services-why-text">
-            We provide personalized solutions tailored to each client's specific
-            needs and requirements.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- GALLERY PAGE -->
-    <div id="gallery" class="page gallery-page">
-      <h1 class="gallery-title">Our Gallery</h1>
-
-      <div class="navigation">
-        <nav class="nav-buttons">
-          <button class="nav-btn nav-home" onclick="showPage('home')">
-            Home
-          </button>
-          <button class="nav-btn nav-about" onclick="showPage('about')">
-            About
-          </button>
-          <button class="nav-btn nav-services" onclick="showPage('services')">
-            Services
-          </button>
-          <button
-            class="nav-btn nav-gallery active"
-            onclick="showPage('gallery')"
-          >
-            Gallery
-          </button>
-          <button class="nav-btn nav-updates" onclick="showPage('updates')">
-            Updates
-          </button>
-          <button class="nav-btn nav-contact" onclick="showPage('contact')">
-            Contact Us
-          </button>
-        </nav>
-      </div>
-
-      <!-- Blinking element -->
-      <div class="blinking-wave">🌊</div>
-
-      <div class="gallery-content">
-        <p class="gallery-intro">
-          Check out some of our recent work and projects
-        </p>
-
-        <!-- Misaligned thumbnails -->
-        <div class="gallery-grid">
-          <div class="gallery-row">
-            <div class="gallery-item">
-              <img
-                src="https://images.unsplash.com/photo-1746397545445-f6086889ccc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHx8fDE3NTcwMDk3NDd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Portfolio Design"
-                class="gallery-img"
-                style="width: 96px; height: 80px"
-              />
-              <p
-                class="gallery-caption"
-                style="
-                  color: #2563eb;
-                  font-family: 'Comic Sans MS';
-                  font-size: 12px;
-                  margin-top: 4px;
-                "
-              >
-                Portfolio Design
-              </p>
-            </div>
-
-            <div class="gallery-item">
-              <img
-                src="https://images.unsplash.com/photo-1730794545099-14902983739d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHx8fDE3NTY5MDU1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Web Design Project"
-                class="gallery-img"
-                style="width: 128px; height: 96px; border: 2px solid #f87171"
-              />
-              <p
-                class="gallery-caption"
-                style="
-                  color: #15803d;
-                  font-family: 'Times New Roman';
-                  font-size: 18px;
-                  margin-top: 4px;
-                "
-              >
-                Web Design Project
-              </p>
-            </div>
-          </div>
-
-          <div class="gallery-row">
-            <div class="gallery-item">
-              <img
-                src="https://images.unsplash.com/photo-1597740985671-2a8a3b80502e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHx8fDE3NTY5MzY5MzF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Mobile App Design"
-                class="gallery-img"
-                style="width: 112px; height: 88px; border: 3px solid #3b82f6"
-              />
-              <p
-                class="gallery-caption"
-                style="
-                  color: #7c3aed;
-                  font-family: 'Arial Black';
-                  font-size: 14px;
-                  margin-top: 4px;
-                "
-              >
-                Mobile App Design
-              </p>
-            </div>
-
-            <div class="gallery-item">
-              <img
-                src="https://broken-image-link-that-doesnt-exist.jpg"
-                alt="Broken Image Example"
-                class="gallery-img"
-                style="
-                  width: 80px;
-                  height: 64px;
-                  border: 1px solid #ca8a04;
-                  background-color: #f3f4f6;
-                "
-              />
-              <p
-                class="gallery-caption"
-                style="
-                  color: #ea580c;
-                  font-family: Georgia;
-                  font-size: 20px;
-                  margin-top: 4px;
-                "
-              >
-                Broken Image Example
-              </p>
-            </div>
-
-            <div class="gallery-item">
-              <img
-                src="https://another-broken-link.png"
-                alt="Another Missing Image"
-                class="gallery-img"
-                style="
-                  width: 104px;
-                  height: 72px;
-                  border: 2px solid #ec4899;
-                  background-color: #f3f4f6;
-                "
-              />
-              <p
-                class="gallery-caption"
-                style="
-                  color: #dc2626;
-                  font-family: 'Courier New';
-                  font-size: 16px;
-                  margin-top: 4px;
-                "
-              >
-                Another Missing Image
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery-featured">
-          <h2 class="gallery-featured-title">Featured Work</h2>
-          <p class="gallery-featured-text">
-            These are some of our most successful projects that showcase our
-            expertise and creativity.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- UPDATES PAGE -->
-    <div id="updates" class="page updates-page">
-      <h1 class="updates-title">Latest Updates & News</h1>
-
-      <div class="navigation">
-        <nav class="nav-buttons">
-          <button class="nav-btn nav-home" onclick="showPage('home')">
-            Home
-          </button>
-          <button class="nav-btn nav-about" onclick="showPage('about')">
-            About
-          </button>
-          <button class="nav-btn nav-services" onclick="showPage('services')">
-            Services
-          </button>
-          <button class="nav-btn nav-gallery" onclick="showPage('gallery')">
-            Gallery
-          </button>
-          <button
-            class="nav-btn nav-updates active"
-            onclick="showPage('updates')"
-          >
-            Updates
-          </button>
-          <button class="nav-btn nav-contact" onclick="showPage('contact')">
-            Contact Us
-          </button>
-        </nav>
-      </div>
-
-      <div class="updates-content">
-        <h2 class="updates-h2">Recent Announcements</h2>
-
-        <div class="updates-section">
-          <p class="updates-text">
-            We are excited to announce our new partnership with leading
-            technology companies.
-          </p>
-          <p class="updates-text">
-            Our team has been working hard to improve our services and deliver
-            better results.
-          </p>
-          <p class="updates-text">
-            Stay tuned for more exciting updates coming your way soon.
-          </p>
-        </div>
-
-        <h2 class="updates-h2 news">Company News</h2>
-
-        <div class="updates-section">
-          <p
-            style="
-              color: #4b5563;
-              font-family: 'Comic Sans MS';
-              font-size: 16px;
-              line-height: 1;
-              margin-bottom: 4px;
-            "
-          >
-            Check out our
-            <a href="#" style="color: #666; text-decoration: none"
-              >latest blog post</a
-            >
-            about industry trends.
-          </p>
-          <p
-            style="
-              color: #374151;
-              font-family: Impact;
-              font-size: 14px;
-              line-height: 1.1;
-              margin-bottom: 4px;
-            "
-          >
-            We've launched a new feature that will revolutionize how you work
-            with us.
-          </p>
-          <p
-            style="
-              color: #4b5563;
-              font-family: 'Times New Roman';
-              font-size: 15px;
-              line-height: 1;
-              margin-bottom: 4px;
-            "
-          >
-            Visit our
-            <a href="#" style="color: #777; text-decoration: none"
-              >resource center</a
-            >
-            for helpful guides and tutorials.
-          </p>
-        </div>
-
-        <h2 class="updates-h2 events">Events & Workshops</h2>
-
-        <div class="updates-section">
-          <p
-            style="
-              color: #374151;
-              font-family: Helvetica;
-              font-size: 13px;
-              line-height: 1.1;
-              margin-bottom: 4px;
-            "
-          >
-            Join us for our upcoming webinar on digital transformation
-            strategies.
-          </p>
-          <p
-            style="
-              color: #4b5563;
-              font-family: Georgia;
-              font-size: 16px;
-              line-height: 1;
-              margin-bottom: 4px;
-            "
-          >
-            Register for our workshop series to learn more about
-            <a href="#" style="color: #888; text-decoration: none"
-              >best practices</a
-            >
-            in the industry.
-          </p>
-        </div>
-
-        <!-- Useless button -->
-        <div>
-          <button class="updates-button" onclick="handleUselessAlert()">
-            Get More Updates
-          </button>
-        </div>
-
-        <div>
-          <h2 class="updates-h2 archive">Newsletter Archive</h2>
-          <p
-            style="
-              color: #4b5563;
-              font-family: Arial;
-              font-size: 14px;
-              line-height: 1.2;
-            "
-          >
-            Browse through our previous newsletters and stay informed about our
-            journey and achievements.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- CONTACT PAGE -->
-    <div id="contact" class="page contact-page">
-      <h1 class="contact-title">Contact Us</h1>
-
-      <div class="navigation">
-        <nav class="nav-buttons">
-          <button class="nav-btn nav-home" onclick="showPage('home')">
-            Home
-          </button>
-          <button class="nav-btn nav-about" onclick="showPage('about')">
-            About
-          </button>
-          <button class="nav-btn nav-services" onclick="showPage('services')">
-            Services
-          </button>
-          <button class="nav-btn nav-gallery" onclick="showPage('gallery')">
-            Gallery
-          </button>
-          <button class="nav-btn nav-updates" onclick="showPage('updates')">
-            Updates
-          </button>
-          <button
-            class="nav-btn nav-contact active"
-            onclick="showPage('contact')"
-          >
-            Contact Us
-          </button>
-        </nav>
-      </div>
-
-      <!-- Slowly moving element -->
-      <div class="sliding-dove">🕊️</div>
-
-      <div class="contact-content">
-        <div class="contact-form-container">
-          <h2 class="contact-form-title">Get In Touch</h2>
-
-          <!-- Misaligned form -->
-          <form class="contact-form" onsubmit="handleSubmit(event)">
-            <div class="form-group">
-              <label
-                class="form-label"
-                style="font-family: Helvetica; font-size: 14px"
-              >
-                Name:
-              </label>
-              <input
-                type="text"
-                name="name"
-                class="form-input"
-                style="font-family: Arial; font-size: 15px"
-              />
-            </div>
-
-            <div class="form-group">
-              <label
-                class="form-label"
-                style="font-family: Georgia; font-size: 16px"
-              >
-                Email:
-              </label>
-              <input
-                type="email"
-                name="email"
-                class="form-input"
-                style="font-family: 'Times New Roman'; font-size: 14px"
-              />
-            </div>
-
-            <div class="form-group">
-              <label
-                class="form-label"
-                style="font-family: 'Courier New'; font-size: 15px"
-              >
-                Message:
-              </label>
-              <textarea
-                name="message"
-                rows="4"
-                class="form-textarea"
-                style="font-family: Verdana; font-size: 13px"
-              ></textarea>
-            </div>
-
-            <div class="form-group">
-              <button type="submit" class="form-submit">Send Message</button>
-            </div>
-          </form>
-        </div>
-
-        <div class="contact-info">
-          <h2 class="contact-info-title">Contact Information</h2>
-
-          <div class="contact-info-list">
-            <p class="contact-info-item">📧 Email: contact@ourcompany.com</p>
-            <p class="contact-info-item">📞 Phone: (555) 123-4567</p>
-            <p class="contact-info-item">
-              📍 Address: 123 Business Street, City, State 12345
+      <section id="about" class="content-section">
+        <h2>About Us</h2>
+        <div class="card-container">
+          <div class="card">
+            <h3>Our Story</h3>
+            <p>
+              Founded in 2020, our agency was born from a passion for creating
+              beautiful, intuitive, and impactful digital experiences. We believe
+              that great design is about more than just aesthetics; it's about
+              creating a seamless connection between users and technology.
             </p>
-            <p class="contact-info-item">🕒 Business Hours: Mon-Fri 9AM-5PM</p>
+          </div>
+          <div class="card">
+            <h3>Our Mission</h3>
+            <p>
+              Our mission is to empower brands by transforming their digital
+              presence. We are dedicated to delivering innovative solutions,
+              exceptional design, and measurable results that drive growth and
+              foster user loyalty.
+            </p>
           </div>
         </div>
+      </section>
 
-        <div class="contact-social">
-          <h2 class="contact-social-title">Follow Us</h2>
-          <p class="contact-social-text">
-            Stay connected with us on social media for the latest updates and
-            news.
-          </p>
+      <section id="services" class="content-section">
+        <h2>Our Services</h2>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>
+              We create visually stunning and user-friendly interfaces that
+              provide a seamless and enjoyable experience across all devices.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>
+              From custom websites to complex web applications, we build
+              responsive, high-performance solutions that are tailored to your
+              needs.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">📱</div>
+            <h3>Mobile App Design</h3>
+            <p>
+              We design engaging and intuitive mobile apps for both iOS and
+              Android, focusing on user-centric design and functionality.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="content-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1559028006-44a36f115318?q=80&w=2070" alt="Abstract Design 1" />
+            <div class="gallery-caption">Project Aurora</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2072" alt="Modern Workspace" />
+            <div class="gallery-caption">Zenith Workspace</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?q=80&w=2070" alt="Creative Process" />
+            <div class="gallery-caption">Momentum App</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1558959356-a74cb15f402b?q=80&w=2070" alt="Mobile Application" />
+            <div class="gallery-caption">Oasis Mobile</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <div class="card-container">
+          <div class="card">
+            <h3>Get in Touch</h3>
+            <p>
+              Have a project in mind? We'd love to hear from you. Reach out to
+              us, and let's create something amazing together.
+            </p>
+            <a href="mailto:contact@stellar.design" class="cta-button">Email Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Stellar UX/UI Designs. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">Dribbble</a>
         </div>
       </div>
-    </div>
-
-    <script>
-      // Navigation functionality
-      function showPage(pageId) {
-        // Hide all pages
-        const pages = document.querySelectorAll(".page");
-        pages.forEach((page) => page.classList.remove("active"));
-
-        // Show selected page
-        document.getElementById(pageId).classList.add("active");
-
-        // Update navigation buttons
-        const navButtons = document.querySelectorAll(".nav-btn");
-        navButtons.forEach((btn) => btn.classList.remove("active"));
-
-        // Add active class to current page button
-        const currentBtn = document.querySelector(`.nav-${pageId}`);
-        if (currentBtn) {
-          currentBtn.classList.add("active");
-        }
-      }
-
-      // Intentionally useless button handlers
-      function handleUselessButton() {
-        alert("Oops, nothing here!");
-      }
-
-      function handleUselessAlert() {
-        alert("No updates found!");
-      }
-
-      // Wrong redirect function
-      function handleWrongRedirect() {
-        showPage("home"); // Intentionally wrong redirect
-      }
-
-      // Form submission handler
-      function handleSubmit(event) {
-        event.preventDefault();
-        alert("Form sent? Maybe...");
-      }
-
-      // Initialize page
-      document.addEventListener("DOMContentLoaded", function () {
-        showPage("home");
-      });
-    </script>
+    </footer>
   </body>
 </html>
